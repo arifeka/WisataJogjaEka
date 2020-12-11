@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@color/SoftOrangeTravel">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/teksHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:gravity="left"
+            android:padding="30dp"
+            android:text="Jogja itu Terbuat dari Sejuta Rindu"
+            android:textColor="@color/black"
+            android:background="@color/OrangeTravel"
+            android:textSize="20dp">
+        </TextView>
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/markQuote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/teksHome"
+            android:text="|"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="60dp"
+            android:fontFamily="sans-serif-light"
+        >
+        </com.codesgood.views.JustifiedTextView>
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/teksHome3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/teksHome"
+            android:text="@string/hometeksquote"
+            android:paddingLeft="60dp"
+            android:paddingTop="20dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:textSize="12dp"
+            android:fontFamily="sans-serif-light"
+            >
+        </com.codesgood.views.JustifiedTextView>
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/teksHome1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/teksHome3"
+            android:text="@string/hometeks1"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="17dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            >
+
+        </com.codesgood.views.JustifiedTextView>
+
+
+        <ImageView
+            android:id="@+id/gambarHome"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/teksHome1"
+            android:layout_centerHorizontal="true"
+            android:cropToPadding="true"
+            android:padding="10dp"
+            android:src="@drawable/tugu_jogja"
+            >
+
+        </ImageView>
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/teksHome2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/gambarHome"
+            android:layout_marginTop="16dp"
+            android:text="@string/hometeks2"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:textSize="17dp"
+            android:paddingBottom="30dp"
+            >
+
+        </com.codesgood.views.JustifiedTextView>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
